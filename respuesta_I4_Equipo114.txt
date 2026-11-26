@@ -1,0 +1,8 @@
+Sinchicay Abigail
+Rodriguez Danilo
+Sánchez Agustina
+
+A- El fondo en TESTING es Azul
+B- El fondo en DESARROLLO es Amarillo
+C- El fondo en master es Azul
+D- Quedó el favicon de BETA
