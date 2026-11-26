@@ -6,3 +6,11 @@ A- El fondo en TESTING es Azul
 B- El fondo en DESARROLLO es Amarillo
 C- El fondo en master es Azul
 D- Quedó el favicon de BETA
+
+E- Tanto BETA como GAMMA tuvieron problemas al hacer el push
+F- Surgió un error causado porque BETA y GAMMA no tenían las últimas actualizaciones integradas en su repositorio local
+G- Se podría hacer git pull origin TESTING y resolver el error manualmente, conservando los cambios de todos los integrantes. No habría problemas adicionales.
+Otra opción sería utilizar git pull --rebase origin TESTING, resolver el conflicto y continuar el rebase, sin embargo esto causaría que se reescriban los commits locales.
+También se podrían descartar los cambios locales y volver a agregar los <p> en la última versión. En este caso se evita resolver un conflicto con merge, pero se pierde el commit original.
+H- En caso de que se utilice push -f quedaría solo lo hecho por el último que lo ejecute, dado que fuerza el resultado para que se guarde por encima del resto.
+I- En primer lugar, lo escrito por ALFA, BETA y GAMMA debe poder visualizarse en la rama TESTING, por ende BETA debería actualizar su repositorio local, luego guardar los cambios y subirlos para que GAMMA pueda hacer lo mismo. Una vez hecho esto, debe hacerse un merge a la rama DESARROLLO, resolver conflictos que puedan surgir y subir los cambios a git.
